@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador Web de Evidencias OVNI</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Centro de Desclasificación de Evidencias OVNI</h1>
+        <p>Análisis y Registro de Fenómenos Aéreos No Identificados (FANI)</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#simulador">Simulador de Evidencias</a></li>
+            <li><a href="https://www.war.gov/ufo/?releaseDate=Release+02" target="_blank" rel="noopener noreferrer">Fuente Oficial (Inspiración)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="simulador" class="card">
+            <h2>Clasificador de Confiabilidad de Evidencia</h2>
+            <p>Complete el siguiente formulario oficial para evaluar el nivel de solidez de la evidencia recolectada.</p>
+            
+            <form id="formulario-ovni">
+                <div class="form-group">
+                    <label for="nombre-reporte">Nombre del Reporte / Expediente:</label>
+                    <input type="text" id="nombre-reporte" placeholder="Ej. Caso Roswell 2026" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lugar-avistamiento">Lugar del Avistamiento:</label>
+                    <input type="text" id="lugar-avistamiento" placeholder="Ej. Nevada, EE.UU." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad-testigos">Cantidad de Testigos:</label>
+                    <input type="number" id="cantidad-testigos" min="0" placeholder="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tiene-video">¿Existe evidencia en Video?</label>
+                    <select id="tiene-video" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tiene-imagen">¿Existe evidencia en Imagen / Fotografía?</label>
+                    <select id="tiene-imagen" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tiene-radar">¿Fue detectado por Radar oficial?</label>
+                    <select id="tiene-radar" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="explicacion-cientifica">¿Hay una explicación científica probable?</label>
+                    <select id="explicacion-cientifica" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción breve de los hechos:</label>
+                    <textarea id="descripcion" rows="4" placeholder="Describa brevemente la forma, luces o comportamiento del objeto..." required></textarea>
+                </div>
+
+                <div class="botones-container">
+                    <button type="submit" id="btn-evaluar" class="btn-primary">Evaluar Evidencia</button>
+                    <button type="button" id="btn-reiniciar" class="btn-secondary">Reiniciar Formulario</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="seccion-resultado" class="card hidden">
+            <h2>Resultado del Análisis Técnico</h2>
+            <div id="contenedor-mensaje">
+                <p id="resultado-texto"></p>
+                <p id="resultado-puntos"></p>
+                <p id="resultado-recomendacion" class="recomendacion"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Proyecto de Desclasificación OVNI. Desarrollado de manera individual para Programación Web I.</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
