@@ -1,17 +1,15 @@
-/* --- Variables de Paleta de Colores (Verdes y Morados) --- */
 :root {
-    --bg-dark-fallback: #0a0512; /* Color de fondo por si la imagen no carga */
-    --bg-card: rgba(26, 15, 46, 0.85); /* Morado muy oscuro con transparencia para dejar ver el fondo */
-    --purple-light: #a855f7; /* Morado eléctrico para textos secundarios */
-    --neon-green: #22c55e; /* Verde brillante principal */
-    --neon-green-hover: #16a34a; /* Verde más oscuro para efectos */
-    --alien-lime: #a3e635; /* Verde lima para resaltar advertencias */
-    --text-light: #f3e8ff; /* Blanco con un ligero toque morado */
-    --text-muted: #c084fc; /* Morado claro para textos secundarios */
-    --border-color: #4c1d95; /* Borde morado oscuro */
+    --bg-dark-fallback: #0a0512; 
+    --bg-card: rgba(26, 15, 46, 0.85); 
+    --purple-light: #a855f7;
+    --neon-green: #22c55e; 
+    --neon-green-hover: #16a34a; 
+    --alien-lime: #a3e635; 
+    --text-light: #f3e8ff; 
+    --text-muted: #c084fc; 
+    --border-color: #4c1d95; 
 }
 
-/* --- Estilos Generales --- */
 * {
     margin: 0;
     padding: 0;
@@ -23,14 +21,7 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     padding: 20px;
-    
-    /* ------------------------------------------------------------------ */
-    /* AQUÍ DEBES COLOCAR TU IMAGEN DE FONDO                               */
-    /* Reemplaza 'img/tu-imagen-ovni.jpg' por la ruta y nombre real        */
-    /* de la imagen que guardes en tu carpeta 'img'.                       */
-    /* ------------------------------------------------------------------ */
-    background-image: url('../ovni/photo-1656608138197-2aea23cc3564.avif'); 
-    
+    background-image: url('../ovni/photo-1656608138197-2aea23cc3564.avif');  
     background-color: var(--bg-dark-fallback); /* Fondo de respaldo */
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen de fondo */
@@ -38,7 +29,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* --- Header y Navigation --- */
 header {
     text-align: center;
     padding: 25px 15px;
@@ -90,7 +80,6 @@ nav a:hover {
     border-bottom: 1px solid var(--purple-light);
 }
 
-/* --- Estructura Principal y Tarjetas (Cards) --- */
 main {
     max-width: 700px;
     margin: 0 auto;
@@ -105,7 +94,7 @@ main {
     border-radius: 8px;
     padding: 25px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(4px); /* Efecto de vidrio esmerilado sobre la imagen de fondo */
+    backdrop-filter: blur(4px); 
 }
 
 .card h2 {
@@ -123,7 +112,7 @@ main {
     color: #e9d5ff;
 }
 
-/* --- Formularios --- */
+
 .form-group {
     margin-bottom: 20px;
     display: flex;
@@ -159,7 +148,6 @@ input:focus, select:focus, textarea:focus {
     background-color: rgba(15, 7, 28, 0.95);
 }
 
-/* --- Botones --- */
 .botones-container {
     display: flex;
     gap: 15px;
@@ -203,7 +191,7 @@ button:active {
     transform: scale(0.98);
 }
 
-/* --- Estados Dinámicos y Resultados --- */
+
 .hidden {
     display: none;
 }
@@ -245,7 +233,7 @@ button:active {
     padding-top: 10px;
 }
 
-/* --- Footer --- */
+
 footer {
     text-align: center;
     margin-top: 40px;
@@ -257,7 +245,7 @@ footer {
     border-radius: 4px;
 }
 
-/* --- Adaptación Total para Celulares --- */
+
 @media (max-width: 650px) {
     body {
         padding: 10px;
